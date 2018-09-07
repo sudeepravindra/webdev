@@ -1,0 +1,52 @@
+<html>
+<head><title>calculator</title>
+</head>
+<style>
+tr,td{
+
+padding:2px;
+}
+input{
+width:100%;
+}
+</style>
+<body>
+<form name="lab1">
+
+<table bgcolor="white" align="center">
+<tr>
+<td colspan="4"><input name="display" type="text"></td>
+</tr>
+
+<tr>
+<td><input type="button" value="1" onclick="lab1.display.value +='1'"></td>
+<td><input type="button" value="2" onclick="lab1.display.value +='2'"></td>
+<td><input type="button" value="3" onclick="lab1.display.value +='3'"></td>
+<td><input type="button" value="+" onclick="lab1.display.value +='+'"></td>
+</tr>
+
+<tr>
+<td><input type="button" value="4" onclick="lab1.display.value +='4'"></td>
+<td><input type="button" value="5" onclick="lab1.display.value +='5'"></td>
+<td><input type="button" value="6" onclick="lab1.display.value +='6'"></td>
+<td><input type="button" value="-" onclick="lab1.display.value +='-'"></td>
+</tr>
+
+<tr>
+<td><input type="button" value="7" onclick="lab1.display.value +='7'"></td>
+<td><input type="button" value="8" onclick="lab1.display.value +='8'"></td>
+<td><input type="button" value="9" onclick="lab1.display.value +='9'"></td>
+<td><input type="button" value="*" onclick="lab1.display.value +='*'"></td>
+</tr>
+
+<tr>
+<td><input type="button" value="0" onclick="lab1.display.value +='0'"></td>
+<td><input type="reset" value="c"></td>
+<td><input type="button" value="=" onclick="lab1.display.value=eval(lab1.display.value)"></td>
+<td><input type="button" value="/" onclick="lab1.display.value +='/'"></td>
+</tr>
+
+</table>
+</form>
+</body>
+</html>
